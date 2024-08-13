@@ -20,14 +20,18 @@ class FlutterDominantColorContainer extends StatefulWidget {
     this.loadingBuilder,
     required this.child,
     required this.colorOpacity,
-  })  : assert((imageType != ImageType.svg || imageType != ImageType.others), 'Image Type is required choose either ImageType.others or ImageType.svg'),
-        assert((colorOpacity > 0 || colorOpacity < 1), 'ColorOpacity should be between 0.0 - 1.0');
+  })  : assert((imageType != ImageType.svg || imageType != ImageType.others),
+            'Image Type is required choose either ImageType.others or ImageType.svg'),
+        assert((colorOpacity > 0 || colorOpacity < 1),
+            'ColorOpacity should be between 0.0 - 1.0');
 
   @override
-  State<FlutterDominantColorContainer> createState() => _FlutterDominantColorContainerState();
+  State<FlutterDominantColorContainer> createState() =>
+      _FlutterDominantColorContainerState();
 }
 
-class _FlutterDominantColorContainerState extends State<FlutterDominantColorContainer> {
+class _FlutterDominantColorContainerState
+    extends State<FlutterDominantColorContainer> {
   late Future<Color> _future;
   final colorMethod = ColorMethods();
 
@@ -93,7 +97,8 @@ class _FlutterDominantColorContainerState extends State<FlutterDominantColorCont
                   ],
                 )
               : Center(
-                  child: widget.loadingBuilder ?? const CircularProgressIndicator(),
+                  child: widget.loadingBuilder ??
+                      const CircularProgressIndicator(),
                 ),
         );
       },

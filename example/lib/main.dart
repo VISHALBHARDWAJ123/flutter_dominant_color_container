@@ -34,7 +34,8 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Material(
       child: FlutterDominantColorContainer(
-        imageSource: 'https://images.pexels.com/photos/10939109/pexels-photo-10939109.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+        imageSource:
+            'https://images.pexels.com/photos/10939109/pexels-photo-10939109.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
         imageType: ImageType.others,
         loadingBuilder: const Text('Loading.....'),
         errorWidget: const Text('Error......'),
