@@ -1,5 +1,5 @@
 name: flutter_dominant_color_container
-description: "The Dominant Color Container is a custom Flutter widget that dynamically extracts the dominant color from an image and applies it as the background color of a container. This widget enhances UI design by automatically adapting to the primary color scheme of images, making it ideal for creating visually cohesive layouts."
+description: "The Dominant Color Container is a custom Flutter widget that dynamically extracts the dominant color from an image and applies it as the background color of a container."
 version: 1.0.0
 homepage: https://github.com/VISHALBHARDWAJ123/flutter_dominant_color_container.git
 
